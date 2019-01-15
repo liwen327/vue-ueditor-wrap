@@ -14,18 +14,6 @@ import optArtiDetail from '../pages/operation/conManage/optArtiDetail'
 import optMiniArtiDetail from '../pages/operation/conManage/optMiniArtiDetail'
 
 
-// 学校后台 内容管理 schContent   schConList  schConDetail 
-import schContent from '../pages/school/conManage/conManage'
-import schConList from '../pages/school/conManage/conManageList'
-import schConDetail from '../pages/school/conManage/schConDetail'
-
-
-// 学校后台 学校管理      
-import schManage from '../pages/school/schoolMana/schManage'
-import schBasic from '../pages/school/schoolMana/schoolBasic'
-import schIntro from '../pages/school/schoolMana/schoolIntro'
-import schoolSing from '../pages/school/schoolMana/schoolSing'
-import schoolContact from '../pages/school/schoolMana/schoolContact'
 
 Vue.use(VueRouter)
 VueRouter.prototype.goBack = function () {
@@ -87,72 +75,6 @@ const router = new VueRouter({
               meta: {
                 loginRequired: true,
                 title: '运营后台增加编辑微文章'
-              }
-            }
-          ]
-        },
-        // 学校后台 内容管理   
-        {
-          path: '/school/content',
-          component: schContent,
-          props: (route) => ({
-            conId: route.query.conId
-          }),
-          children: [{
-              path: 'list',
-              component: schConList,
-              meta: {
-                loginRequired: true,
-                title: '学校后台内容管理列表'
-              }
-            },
-            {
-              path: 'detail',
-              component: schConDetail,
-              meta: {
-                loginRequired: true,
-                title: '学校后台增加编辑文章'
-              }
-            }
-          ]
-        },
-        //学校后台 学校管理       schoolContact      
-        {
-          path: '/school',
-          component: schManage,
-          props: (route) => ({
-            conId: route.query.conId
-          }),
-          children: [{
-              path: 'basic',
-              component: schBasic,
-              meta: {
-                loginRequired: true,
-                title: '学校基本信息'
-              }
-            },
-            {
-              path: 'introdution',
-              component: schIntro,
-              meta: {
-                loginRequired: true,
-                title: '学校简介'
-              }
-            },
-            {
-              path: 'sing',
-              component: schoolSing,
-              meta: {
-                loginRequired: true,
-                title: '学校校歌'
-              }
-            },
-            {
-              path: 'contact',
-              component: schoolContact,
-              meta: {
-                loginRequired: true,
-                title: '学校联系信息'
               }
             }
           ]

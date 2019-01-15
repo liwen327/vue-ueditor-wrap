@@ -1,7 +1,5 @@
 // import api from '@/apis/http'
 import * as types from './../types.js'
-// import dicService from '../../common/service/DicService'
-import userService from '../../common/service/UserService'
 import loginService from '@/common/service/loginService'
 const state = {
   // 请求数据时加载状态loading

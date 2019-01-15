@@ -126,7 +126,6 @@ export default {
       let chooseMana = this.$store.state.app.manaList.filter(item => {
         return this.manaForm.manaData === item.id
       })
-      // console.log(chooseMana)
       localStorage.setItem('manaType', chooseMana[0].manaType)
       localStorage.setItem('manaId', chooseMana[0].manaId)
       localStorage.setItem('userType', chooseMana[0].manaType)
@@ -134,21 +133,20 @@ export default {
       this.$store.state.app.manaName = chooseMana[0].manaName
       store.dispatch('MENU_LIST')
       this.$router.push('/home')
-      // location.reload()
     },
-    /* ...mapActions([
+    ...mapActions([
       'MENU_LIST',
       'USER_MULTI'
-    ]) */
+    ])
   },
-  /* computed: {
+  computed: {
     ...mapGetters([
       'user',
       'isMultiUser',
       'manaList',
       'manaName'
     ])
-  } */
+  }
 }
 </script>
 

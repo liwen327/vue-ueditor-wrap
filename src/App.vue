@@ -28,27 +28,10 @@ export default {
       isRouterAlive: true
     }
   },
-  /* watch: {
-    '$route' (to, from) {
-      if (to.path.indexOf('list') < 0) {
-        this.$store.dispatch('dicInit')
-      }
-    }
-  }, */
   created () {
-    // this.$store.dispatch('USER_MULTI')
-
-    //防止页面后退
-    /* history.pushState(null, null, document.URL);
-    window.addEventListener('popstate', function () {
-      history.pushState(null, null, document.URL);
-    }); */
   },
   mounted () {
-    /* this.init = true
-    if (this.$route.path.indexOf('list') < 0) {
-      this.$store.dispatch('dicInit')
-    } */
+    
   },
   components: {
     AppHeader,
