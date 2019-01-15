@@ -1,0 +1,53 @@
+.el-dialog__body {
+  padding: 20px;
+}
+
+.el-radio {
+  margin-right: 30px !important;
+}
+
+.el-radio+.el-radio {
+  margin: 0 30px 20px 0 !important;
+}
+
+/*比如内容列表中有文章列表标题和添加文章和删除按钮的样式*/
+.con_btn_wrap {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.list_t {
+  border: solid 1px #ebeef5;
+  border-bottom: none;
+  padding: 20px;
+}
+
+.list_t_t {
+  border-bottom: solid 1px #ebeef5;
+  margin: 0 -20px;
+  padding: 0 10px 10px 10px;
+}
+
+.el-cascader {
+  width: 100% !important;
+}
+
+/*学校推荐*/
+.el-autocomplete {
+  width: 100% !important;
+}
+
+/*解决多选表格复选框出现省略号的问题*/
+.el-table td,
+.el-table th {
+  text-overflow: inherit !important;
+}
+
+.el-table th>.cell {
+  text-overflow: inherit !important;
+}
+
+.el-table .cell,
+.el-table th div {
+  text-overflow: inherit !important;
+}

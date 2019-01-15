@@ -1,0 +1,7 @@
+export const USER_LOGIN = 'userLogin'
+export const USER_LOGOUT = 'userLogout'
+export const FETCH_LOADING = 'loading'
+export const USER_MULTI = 'isMultiUser'
+export const MENU_LIST = 'menuList'
+export const MANA_LIST = 'manaList'
+export const MANA_NAME = 'manaName'
